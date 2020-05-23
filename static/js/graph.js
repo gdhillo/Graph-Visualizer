@@ -122,7 +122,7 @@ btn[3].onclick = () => {
     const nodeOneElement = document.getElementById(`${nodeOne.value}_`);
     const textElement = document.getElementById(`text_bfs`);
     reset();
-    textElement.innerHTML = `BFS Traversal: ${nodeOne.value}`;
+    textElement.innerHTML = `BFS Traversal: -> ${nodeOne.value}`;
     nodeOneElement.classList.toggle("active");
     setTimeout(() => {      
     }, 1000);
@@ -181,7 +181,7 @@ const bfs = (node) => {
                     vertex.edges[i].visted = true;
                     const nodeElement = document.getElementById(`${vertex.edges[i].value}_`);
                     const textElement = document.getElementById(`text_bfs`);
-                    textElement.innerHTML += `, ${vertex.edges[i].value}`;
+                    textElement.innerHTML += `-> ${vertex.edges[i].value}`;
                     nodeElement.classList.toggle("active");
                     bfs(vertex.edges[i]);
                 }
@@ -214,7 +214,7 @@ const dfs = (node) => {
             setTimeout(() => {
                 const nodeElement = document.getElementById(`${array[i]}_`);
                 const textElement = document.getElementById(`text_dfs`);
-                textElement.innerHTML += `, ${array[i]}`;
+                textElement.innerHTML += `-> ${array[i]}`;
                 nodeElement.classList.toggle("active");
             },1000*i);
         }
