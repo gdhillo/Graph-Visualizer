@@ -96,6 +96,7 @@ btn[1].onclick = () => {
     elementOne.innerHTML = "";
     elementTwo.innerHTML = "";
     clearNodes();
+    reset();
 };
 
 btn[2].onclick = () => {
