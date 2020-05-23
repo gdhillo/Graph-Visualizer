@@ -122,7 +122,7 @@ btn[3].onclick = () => {
     const nodeOneElement = document.getElementById(`${nodeOne.value}_`);
     const textElement = document.getElementById(`text_bfs`);
     reset();
-    textElement.innerHTML = `BFS Traversal: -> ${nodeOne.value}`;
+    textElement.innerHTML = `BFS Traversal: &#8594; ${nodeOne.value}`;
     nodeOneElement.classList.toggle("active");
     setTimeout(() => {      
     }, 1000);
@@ -181,7 +181,7 @@ const bfs = (node) => {
                     vertex.edges[i].visted = true;
                     const nodeElement = document.getElementById(`${vertex.edges[i].value}_`);
                     const textElement = document.getElementById(`text_bfs`);
-                    textElement.innerHTML += `-> ${vertex.edges[i].value}`;
+                    textElement.innerHTML += `&#8594; ${vertex.edges[i].value}`;
                     nodeElement.classList.toggle("active");
                     bfs(vertex.edges[i]);
                 }
@@ -214,7 +214,7 @@ const dfs = (node) => {
             setTimeout(() => {
                 const nodeElement = document.getElementById(`${array[i]}_`);
                 const textElement = document.getElementById(`text_dfs`);
-                textElement.innerHTML += `-> ${array[i]}`;
+                textElement.innerHTML += `&#8594; ${array[i]}`;
                 nodeElement.classList.toggle("active");
             },1000*i);
         }
@@ -230,7 +230,6 @@ const checkCoordinates = (array) => {
     else {
         for(let i = 0; i < node_coordinates.length; i++){
             if( (array[0] <= (node_coordinates[i].x+100) && array[0] >= (node_coordinates[i].x-100)) && (array[1] <= (node_coordinates[i].y+100) &&  array[1] >= (node_coordinates[i].y-100))){
-                console.log('this ran');
                 const tempArray = checkCoordinates([Math.floor(Math.random()*window.innerHeight/2)+nav.offsetHeight, Math.floor(Math.random()*window.innerWidth)]);
                 array[0] = tempArray[0];
                 array[1] = tempArray[1];
