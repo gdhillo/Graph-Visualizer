@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <title>Graph Visualizer</title>
+    </head>
+    <body>
+        <div id="nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <input id="input"  class="form-control" id="InputNode" placeholder="Insert">
+                    </div>
+                    <div class="col">
+                        <button id="btn" type="submit" class="btn btn-primary">Submit</button>
+                        <button id="btn2" type="submit" class="btn btn-danger">Clear</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="text">Make edge from: </div>
+                    <input id="start"  class="form-control" id="InputNode" placeholder="Start Node"> 
+                    <div id="text">to</div>
+                    <input id="end"  class="form-control" id="InputNode" placeholder="End Node">
+                    <div id="text"></div>
+                    <button id="btn3" type="submit" class="btn btn-primary">Connect</button>
+                </div>
+            </div>
+
+            <hr/>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <input id="bfs_start"  class="form-control" id="InputNode" placeholder="Start">
+                    <div id="text"></div>
+                    <div class="col">
+                        <button id="btn4" type="submit" class="btn btn-primary">BFS</button>
+                        <button id="btn5" type="submit" class="btn btn-danger">Clear</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <input id="dfs_start"  class="form-control" id="InputNode" placeholder="Start">
+                    <div id="text"></div>
+                    <div class="col">
+                        <button id="btn4" type="submit" class="btn btn-primary">DFS</button>
+                        <button id="btn5" type="submit" class="btn btn-danger">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div id="text_bfs">BFS Traversal:</div>
+             </div>
+ 
+            <div class="container-fluid">
+               <div id="text_dfs">DFS Traversal:</div>
+            </div>
+
+            <hr/>
+        </div>
+        <div id="nodes_container">
+            <div id="nodes">
+            </div>
+            <svg id="lines" height="100%" width="100%">
+            </svg>
+        </div>
+        <script src="./static/js/graph.js"></script>
+    </body>
+</html>

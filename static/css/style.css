@@ -1,0 +1,95 @@
+.circle {
+    background: rgb(255, 255, 255);
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+ }
+
+ .active{
+    background: #456BD9;
+    border: 0.1875em solid #0F1C3F;
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+ }
+
+ .node_container{position: absolute;}
+
+ .node{
+    text-align: center;
+    position:absolute;
+ }
+
+ canvas {
+    position:absolute;
+ }
+
+ #id{
+     text-align: center;
+ }
+
+ .container-fluid{
+     padding-top:20px;
+ }
+
+ .row{
+     justify-content: center;
+     align-items: center;
+ }
+
+ #text{
+     padding:5px;
+ }
+
+ .numbers{
+     text-align: center;
+     padding-top:20px;
+     font-size: 20px;
+ }
+
+ #nodes{
+     padding-top:0px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .container-fluid{
+     display:flex;
+     justify-content: center;
+ }
+
+ #start{
+     width:22%;
+ }
+
+ #end{
+    width:20%;
+}
+
+#bfs_start{
+    width:25%;
+}
+
+#dfs_start{
+    width:25%;
+}
+
+#bfs_end{
+    width:30%;
+}
+
+#text_bfs{
+    padding:5px;
+}
+
+#text_dfs{
+    padding:5px;
+}
+
+
+ svg {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
